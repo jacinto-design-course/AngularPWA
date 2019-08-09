@@ -1,3 +1,6 @@
+section { min-height: 100vh; height: auto; position: relative; }
+a, li { text-decoration: none; }
+
 /* -- Home Section ---------------------------------- */
 #home {
   background-color: black;
@@ -45,19 +48,29 @@ video {
   top: 60%;
   margin-left: 5px;
 }
-
 .social-icons fa-icon {
   font-size: 3rem;
   color: white;
   padding: 7.5px 15px;
   cursor: pointer;
 }
-
 .social-icons fa-icon:hover {
   color: #202020;
   background-color: white;
 }
+
 /* -- About Section --------------------------------- */
+#about { background-color: dodgerblue; }
+
 /* -- Projects Section ------------------------------ */
+#projects { background-color: orange; }
+
 /* -- Contact Section ------------------------------- */
+#contact { background-color: purple; }
+
 /* -- Footer Section -------------------------------- */
+#footer {
+  background-color: black;
+  min-height: unset;
+  height: 150px; 
+}
