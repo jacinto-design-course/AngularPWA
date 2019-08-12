@@ -171,7 +171,46 @@ video {
 }
 
 /* -- Contact Section ------------------------------- */
-#contact { background-color: purple; }
+#contact { 
+  /* background-color: black; */
+
+  /* Background Image */
+  /* background: url(../assets/img/mountain-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+  display: flex;
+  justify-content: center;
+}
+.contact-mail {
+  position: absolute;
+  color: white;
+  height: 100px;
+  font-family: alex-brush, sans-serif;
+  font-size: 4rem;
+  margin-top: 10vh;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+}
+.contact-mail:hover {
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+}
+#video-background-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+.red {
+  color: rgb(201,22,22);
+}
+.business-card {
+  height: 100vh;
+  width: auto; 
+}
 
 /* -- Footer Section -------------------------------- */
 #footer {
