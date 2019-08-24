@@ -41,3 +41,12 @@ a, li { text-decoration: none; }
     background-color: #fbfbfb;
     transition: .3s;
 }
+
+/* ---------- Media Queries ----------- */
+
+/* Mobile Navigation */
+@media screen and (max-width: 600px) {
+    .sidebar-container { height: 90px; width: 162px; }
+    .sidebar-toggle { margin: 20px; padding: 2px 14px 5px; width: 120px; }
+    .sidebar-items { font-size: 2rem; top: -12px; left: -20px; }
+}

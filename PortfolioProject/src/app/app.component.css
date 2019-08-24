@@ -232,3 +232,19 @@ video {
   color: rgba(255,255,255,.8);
   text-align: center;
 }
+
+/* -------------------- Media Queries ----------------------- */
+
+/* Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  video { object-fit: cover; }
+  #video-background { height: 100vh; width: 100vw; }
+  #video-background-2 { height: 100vh; width: 100vw; }
+  .main-title { font-size: 3.5rem; }
+  .social-icons fa-icon { font-size: 2rem; }
+  .card { width: 100vw; background-color: rgba(255,255,255,.7); }
+  .card-text { font-size: 1rem; }
+  .projects-title { font-size: 2rem; padding-top: 50px; }
+  .contact-mail { font-size: 3rem; }
+  .footer-icons fa-icon { margin-left: 15px; }
+}
