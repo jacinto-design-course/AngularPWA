@@ -89,7 +89,7 @@ video {
 }
 .card-title {
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 2.5rem; 
   width: 100%; 
   padding-bottom: 25px;
@@ -241,10 +241,15 @@ video {
 
 /* Monitor - Fullscreen */
 @media screen and (min-width: 1800px) and (min-height: 1000px) {
+  .wrapper { overflow-x: hidden; }
+  .card { padding: 5rem 1.5rem; }
+  #footer { height: 180px; }
 }
 
 /* Laptop - Bookmarks Bar */
 @media screen and (max-width: 1800px) {
+  .card { top: 0; }
+  .card-text { font-size: 1.2rem; }
 }
 
 /* Laptop - No Bookmarks Bar */
@@ -253,10 +258,14 @@ video {
 
 /* Laptop - Fullscreen */
 @media screen and (min-width: 1300px) and (max-width: 1799px) and (min-height: 800px) {
+  .wrapper { overflow-x: hidden; }
+  .card { top: 4vh; }
 }
 
 /* Laptop - 1366 x 768 - Bookmarks Bar */
 @media screen and (width: 1366px) {
+  .card-text { font-size: 1rem; }
+  .project-img img { height: 300px; width: 300px; }
 }
 
 /* Laptop - 1366 x 768 - No Bookmarks Bar */
@@ -265,14 +274,31 @@ video {
 
 /* Laptop - 1366 x 768 - Fullscreen */
 @media screen and (width: 1366px) and (min-height: 759px) {
+  .wrapper { overflow-x: hidden; }
+  .card { top: 4vh; }
 }
 
 /* iPad - Horizontal */
 @media screen and (min-width: 900px) and (max-width: 1025px) {
+  video { object-fit: cover; }
+  #video-background { height: 100vh; width: 100vw; }
+  .social-icons { top: 52%; }
+  .card { width: 70vw; top: 5vh; }
+  .project-img img { height: 270px; width: 270px; }
+  #video-background-2 { height: 100vh; width: 100vw; }
+  .footer-icons fa-icon { margin-left: 15px; }
 }
 
 /* iPad */
 @media screen and (max-width: 769px) {
+  video { object-fit: cover; }
+  #video-background { height: 100vh; width: 100vw; }
+  .social-icons { top: 47%; }
+  .card { width: 70vw; top: 9vh; }
+  .projects { margin: 0 2%; position: relative; top: 8vh; }
+  .project-img img { height: 245px; width: 245px; }
+  #video-background-2 { height: 100vh; width: 100vw; }
+  .footer-icons fa-icon { margin-left: 15px; }
 }
 
 /* Large Smartphone (Vertical) */
@@ -281,6 +307,7 @@ video {
   #video-background { height: 100vh; width: 100vw; }
   #video-background-2 { height: 100vh; width: 100vw; }
   .main-title { font-size: 3.5rem; }
+  .social-icons { top: 45%; }
   .social-icons fa-icon { font-size: 2rem; }
   .card { width: 100vw; background-color: rgba(255,255,255,.7); }
   .card-text { font-size: 1rem; }
@@ -302,10 +329,13 @@ video {
 
 /* iPhone X - Horizontal*/
 @media screen and (max-width: 724px) and (max-height: 376px) {
+  .project-title { font-size: 1.2rem; }
+  .github-link { font-size: 1rem; }
 }
 
 /* iPhone X */
 @media screen and (max-width: 376px) {
+  .projects-title { font-size: 1.8rem; }
 }
 
 /* iPhone 6/7/8 */
@@ -314,4 +344,6 @@ video {
 
 /* iPhone 6/7/8 - Horizontal */
 @media screen and (max-width: 668px) and (max-height: 376px) {
+  .card-title { font-size: 2rem; }
+  .project-img img { height: 210px; width: 210px; }
 }
