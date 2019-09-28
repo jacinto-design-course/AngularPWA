@@ -3,6 +3,7 @@ a, li { text-decoration: none; }
 .display-none { display: none; }
 #menu-bars { display: none; }
 #mobile-nav { display: none; }
+@font-face { font-family: webly; src: url(../../../assets/font/webly.svg)}
 
 /* Sidebar */
 .sidebar-container {
@@ -16,7 +17,7 @@ a, li { text-decoration: none; }
 .sidebar-toggle {
     text-transform: uppercase;
     font-size: 2rem; 
-    font-family: 'Segoe UI', sans-serif;
+    font-family: webly, 'Segoe UI', sans-serif;
     color: white;
     background-color: rgba(0,0,0,.5);
     width: 112px;
@@ -31,17 +32,23 @@ a, li { text-decoration: none; }
 }
 .sidebar-items li {
     text-transform: uppercase;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: webly, 'Segoe UI', sans-serif;
     cursor: pointer;
     padding: 2px 14px 5px;
     margin-bottom: 20px;
     color: white;
     background-color: rgba(0,0,0,.5);
+    z-index: 10;
 }
-.side-items li:hover {
+.sidebar-items li:hover {
     color: rgba(0,0,0,.85);
     background-color: #fbfbfb;
     transition: .3s;
+}
+
+@media screen and (max-width: 1800px) {
+    .sidebar-toggle { margin: 20px; }
+    .sidebar-items { left: -20px; top: -28px; font-size: 2.75rem; }
 }
 
 /* ---------- Media Queries ----------- */
@@ -57,8 +64,8 @@ a, li { text-decoration: none; }
         position: fixed;
         top: -300px;
         left: -50px;
-        width: 112%;
-        z-index: 5;
+        width: 113%;
+        z-index: 10;
         transition: 0.5s ease;
     }
     .nav-expand {
@@ -73,7 +80,7 @@ a, li { text-decoration: none; }
     }
     .nav-items li {
         text-transform: uppercase;
-        font-family: 'Segoe UI', sans-serif;
+        font-family: webly, 'Segoe UI', sans-serif;
         padding: 10px;
         margin-left: 10px;
         background-color: rgba(0,0,0,.85);
