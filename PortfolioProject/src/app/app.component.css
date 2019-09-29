@@ -270,7 +270,10 @@ video {
 /* Laptop - 1366 x 768 - Bookmarks Bar */
 @media screen and (width: 1366px) {
   .card-text { font-size: 1rem; }
+  .main-title { font-size: 5rem; }
+  .card { width: 60vw; }
   .project-img img { height: 300px; width: 300px; }
+  .contact-mail { font-size: 4rem; }
 }
 
 /* Laptop - 1366 x 768 - No Bookmarks Bar */
@@ -280,7 +283,14 @@ video {
 /* Laptop - 1366 x 768 - Fullscreen */
 @media screen and (width: 1366px) and (min-height: 759px) {
   .wrapper { overflow-x: hidden; }
-  .card { top: 4vh; }
+}
+
+/* 1080P Monitor (150%) */
+@media screen and (max-width: 1300px) {
+  .main-title { font-size: 5rem; }
+  .card { width: 50vw; }
+  .project-img img { height: 330px; width: 330px; }
+  .contact-mail { font-size: 4rem; }
 }
 
 /* iPad - Horizontal */

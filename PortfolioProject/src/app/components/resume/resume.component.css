@@ -260,6 +260,7 @@ ul {
 }
 @media screen and (max-width: 1300px) {
   .rounded-img { max-width: 7rem; max-height: 7rem; border-width: .25rem; }
+  .about-content { top: 22vh; }
   .education-content { top: 10vh; }
   .skills-content { top: 20vh; }
   .interests-content { top: 20vh; }
