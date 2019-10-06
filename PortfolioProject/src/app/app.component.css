@@ -1,6 +1,7 @@
-@font-face { font-family: webly; src: url(../assets/font/webly.svg)}
-section { min-height: 100vh; height: auto; position: relative; font-family: webly, 'Segoe UI', helvetica, sans-serif; }
+@font-face { font-family: webly; src: url(../assets/font/webly.ttf)}
+section { min-height: 100vh; height: auto; position: relative; font-family: webly, 'Segoe UI', helvetica, sans-serif; line-height: 1.3; }
 a { text-decoration: none; color: white; }
+.wrapper { overflow: hidden; }
 
 /* -- Home Section ---------------------------------- */
 #home {
@@ -81,6 +82,7 @@ video {
 }
 .about-img {
   height: 35vh;
+  width: 35vh;
   margin: 0 auto;
   border-radius: 50%;
   box-shadow: 2px 5px 10px 4px rgba(0,0,0,.25);
@@ -336,7 +338,7 @@ video {
   .main-title { top: 15%; }
   .card { width: 80%; top: 0; }
   .card-text { font-size: 1rem; }
-  .about-img { height: 50vh; }
+  .about-img { height: 50vh; width: 50vw; }
   .projects { margin: 0 2%; }
   .project-img img { height: 245px; width: 245px; }
   .footer-icons fa-icon { margin-left: 20px; }

@@ -3,7 +3,7 @@ a, li { text-decoration: none; }
 .display-none { display: none; }
 #menu-bars { display: none; }
 #mobile-nav { display: none; }
-@font-face { font-family: webly; src: url(../../../assets/font/webly.svg)}
+@font-face { font-family: webly; src: url(../../../assets/font/webly.ttf)}
 
 /* Sidebar */
 .sidebar-container {
